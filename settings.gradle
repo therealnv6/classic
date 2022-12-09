@@ -1,0 +1,11 @@
+
+rootProject.name = 'classic'
+include 'shared'
+include 'api'
+include 'spigot'
+include 'rest'
+include 'rest:client'
+findProject(':rest:client')?.name = 'client'
+include 'rest:server'
+findProject(':rest:server')?.name = 'server'
+
